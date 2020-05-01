@@ -16,18 +16,16 @@ clf = load('model.joblib')
 
 def classify(data): 
 
-    # print("length of data: ")
-    # print(len(data))
-    # print("\n")
-    # for i in range(len(data)):
-    #     print(len(data[i]))
-    #     print("\n")
-
+    ##opens Notes.txt file 
     file1 = open("Notes.txt","a")
+    ## goes through and gets the entities and size
+    ## needed for the prediction 
     for i in range(len(data)):
         entities = []
         total_length = []
         predict_array = []
+        ## creates array of predictions for each sentence 
+        ## in a topic in each paragraph 
         for j in range(len(data[i])): 
             doc = nlp(data[i][j])
             entities.append((len(doc.ents)))
@@ -37,7 +35,8 @@ def classify(data):
         
         file1.write("-" + data[i][0])
         file1.write("\n")
-        
+        ## goes through and indents how the sentences are 
+        ## based on the calculated prediction
         for y in range(1,len(predict_array)): 
             if(predict_array[y] == 1 and y != 0): 
                 file1.write("\t" + "\t" + "-" + data[i][y])
@@ -47,73 +46,17 @@ def classify(data):
                 file1.write("\n")
     file1.write("\n")
 
-        # for x in range(len(data[i])):
-        #     print(len(data[i][x]))
-        #     for y in range(len(data[i][x])): 
-                
-            #     if(predict_array[0][y] == 1 and y != 0): 
-            #         file1.write("\t" + "\t" + "-" + data[i][y])
-            #         file1.write("\n")
-            #     elif(predict_array[0][y] == 0 and y != 1):
-            #         file1.write("-" + data[i][y])
-            #         file1.write("\n")
-            # file1.write("\n")
-
-
-
-    # col = []
-    # for i in range(0, len(data)): 
-    #     col.append(len(data[i]))
-
-    # classify_data = []
-    # for i in range(0, len(data)):
-    #     print("Changing the paragraph")
-    #     entities = []
-    #     total_length = []
-    #     predict_ary = []
-    #     for j in range(0, len(data[i])):
-    #         doc = nlp(data[i][j])
-    #         entities.append((len(doc.ents)))
-    #         total_length.append((len(data[i][j])))
-    #         predictions = list(zip(total_length, entities))
-    #         predict_ary.append(np.array((clf.predict(predictions))))
-    #     #print(predict_ary)
-    #     #file1 = open("Notes.txt","a")
-    #     print(len(predict_ary[i]))
-    #     print(len(data[i][j]))
-        # for x in range(len(data[i])):
-        #     for y in range()
         
-
-
-    #simple_array[1:3]
-    
-    ## append mode I believe 
-    #  
-    # #
-    # for i in range(0, len(classify)): 
-    #     for j in range(0, len(data[i])):
-    #         if(classify[i] == 1 and j != 0):
-    #             file1.write("\t" + "\t" + "-" + data[i][j])
-    #             file1.write("\n")
-    #         elif(classify[i] == 0):
-    #             file1.write("-" + data[i][j])
-    #             file1.write("\n")
-    #     file1.write("\n")
-        
-
-
-
 def sentClassify():
     lda_modeling = TopicModeling()
+    ##gathers paragraphs from textbook 
     with open('Ch1-HumanGeo.txt', 'r', encoding='utf-8') as txt:
         paragraphs = txt.readlines()
-    
+    ##groups the sentences using lda topic modeling class 
     for paragraph in paragraphs[0:60]:
-        groupedSentence = lda_modeling.groupSentence(paragraph)   
-        #print("CHANGES HERE" , "\n ", "\n")    
+        groupedSentence = lda_modeling.groupSentence(paragraph)    
+        ##calls classify function for each paragraph  
         classify(groupedSentence)
-        ##print(bestGrouping)
         
 def main():
     alphaValues = ['symmetric', 'asymmetric', 'auto', 0.1, 0.01, 0.001, 0.0001, 0.00001, 0.000001]
