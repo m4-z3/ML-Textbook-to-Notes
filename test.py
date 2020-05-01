@@ -254,16 +254,16 @@ def testHyperParameters(alpha, etaValues, startParagraph=0, endParagraph=0):
 
 
 def createMultiGraphs(alpha, etaValues):
-    rowSize = 2
-    colSize = 4
+    rowSize = 4
+    colSize = 2
 
     startTopicNum = 2
     endTopicNum = 6
 
-    fig, a = plt.subplots(nrows=rowSize, ncols=colSize, sharex=True, sharey=True, figsize=(24, 5))
+    fig, a = plt.subplots(nrows=rowSize, ncols=colSize, sharex=True, sharey=True, figsize=(8, 7))
     fig.suptitle("Average Coherence Score vs Number of Topics: Alpha=" + str(alpha))
 
-    fig2, a2 = plt.subplots(nrows=rowSize, ncols=colSize, sharex=True, sharey=True, figsize=(24, 5))
+    fig2, a2 = plt.subplots(nrows=rowSize, ncols=colSize, sharex=True, sharey=True, figsize=(8, 7))
     fig2.suptitle("Best Topic Number vs Word Count: Alpha=" + str(alpha))
 
     for eta in etaValues:
@@ -318,12 +318,15 @@ def createMultiGraphs(alpha, etaValues):
         a[row][col].set_title('Eta=' + str(eta))
         a2[row][col].set_title('Eta=' + str(eta))
 
+        color=iter(plt.cm.rainbow(np.linspace(0,1,len(wordRange))))
+
         for i in range(len(wordRange)):
-            a[row][col].plot([2, 3, 4, 5], averageCoherence[i], label=wordRange[i])
+            c = next(color)
+            a[row][col].plot([2, 3, 4, 5], averageCoherence[i], label=wordRange[i], c=c)
         
         a2[row][col].scatter([x.numWords for x in groupSentObjList], [x.bestTopicNum for x in groupSentObjList])
 
-        a2[row][col].text(155, 4.7, 'Avg=' + str(round(np.mean([x.bestTopicNum for x in groupSentObjList]), 3)))
+        a2[row][col].text(140, 4.7, 'Avg=' + str(round(np.mean([x.bestTopicNum for x in groupSentObjList]), 3)))
 
 
     handles, labels = a[0][0].get_legend_handles_labels()
@@ -332,14 +335,13 @@ def createMultiGraphs(alpha, etaValues):
     fig.text(0.04, 0.5, 'Coherence Score', va='center', rotation='vertical')
     start, end = a[0][0].get_ylim()
     plt.setp(a, xticks=[2, 3, 4, 5], yticks=np.arange(np.floor(start * 10) / 10, np.ceil(end * 10) / 10, 0.05))
-    fig.subplots_adjust(left=0.07, bottom=0.13, top=0.89, wspace=0.04)
-    fig.savefig('HyperparameterTestingGraphs-Asymmetric/' + 'coherenceGraph-Alpha' + str(alpha).replace('.', '_') + '.png')
+    fig.subplots_adjust(left=0.14, right=0.83, bottom=0.13, top=0.89, wspace=0.04, hspace=0.28)
+    fig.savefig('Phase2-104Paragraph/HyperparameterTestingGraphs-Asymmetric/' + 'coherenceGraph-Alpha' + str(alpha).replace('.', '_') + '.png')
     
     fig2.text(0.5, 0.04, 'Word Count', ha='center')
     fig2.text(0.04, 0.5, 'Best Topic Number', va='center', rotation='vertical')
-    fig2.subplots_adjust(left=0.07, bottom=0.13, top=0.89, wspace=0.04)
-    fig2.savefig('BestTopicNum-Asymmetric/' + 'bestTopic-Alpha' + str(alpha).replace('.', '_') + '.png')
-
+    fig2.subplots_adjust(left=0.10, bottom=0.10, top=0.89, wspace=0.04, hspace=0.25)
+    fig2.savefig('Phase2-104Paragraph/BestTopicNum-Asymmetric/' + 'bestTopic-Alpha' + str(alpha).replace('.', '_') + '.png')
 
 
 def main():
