@@ -12,8 +12,8 @@ def classify(data):
         model.trainModel()
 
     clf = load('model.joblib')
-    ##opens Notes.txt file 
-    file1 = open("Notes.txt","a")
+    # stores output for file
+    output = []
     ## goes through and gets the entities and size
     ## needed for the prediction 
     for i in range(len(data)):
@@ -29,18 +29,21 @@ def classify(data):
             predictions = list(zip(total_length, entities))
             predict_array = clf.predict(predictions)
         
-        file1.write("-" + data[i][0])
-        file1.write("\n")
+        output.append("-" + data[i][0])
+        output.append("\n")
         ## goes through and indents how the sentences are 
         ## based on the calculated prediction
         for y in range(1,len(predict_array)): 
             if(predict_array[y] == 1 and y != 0): 
-                file1.write("\t" + "\t" + "-" + data[i][y])
-                file1.write("\n")
+                output.append("\t" + "\t" + "-" + data[i][y])
+                output.append("\n")
             elif(predict_array[y] == 0 and y != 1):
-                file1.write("\t" + "-" + data[i][y])
-                file1.write("\n")
-    file1.write("\n")
+                output.append("\t" + "-" + data[i][y])
+                output.append("\n")
+    output.append("\n")
+
+    # returns output for file
+    return output
 
 
 
