@@ -46,7 +46,6 @@ def classify(data):
                 file1.write("\n")
     file1.write("\n")
 
-        
 def sentClassify():
     lda_modeling = TopicModeling()
     ##gathers paragraphs from textbook 
@@ -64,3 +63,5 @@ def main():
     sentClassify()
 
 main()
+
+
