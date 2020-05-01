@@ -1,14 +1,17 @@
+import os
 import spacy
 nlp = spacy.load('en_core_web_sm')
 from spacy import displacy
 from sklearn import svm
-from lda import TopicModeling
-from joblib import dump, load
+from joblib import load
+import model
 
-clf = load('model.joblib') 
 
-def classify(data): 
+def classify(data):
+    if not os.path.isfile('model.joblib'):
+        model.trainModel()
 
+    clf = load('model.joblib')
     ##opens Notes.txt file 
     file1 = open("Notes.txt","a")
     ## goes through and gets the entities and size
