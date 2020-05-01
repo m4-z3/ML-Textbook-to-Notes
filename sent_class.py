@@ -101,23 +101,3 @@ def classify(data):
     #             file1.write("\n")
     #     file1.write("\n")
         
-
-
-
-def sentClassify():
-    lda_modeling = TopicModeling()
-    with open('Ch1-HumanGeo.txt', 'r', encoding='utf-8') as txt:
-        paragraphs = txt.readlines()
-    
-    for paragraph in paragraphs[0:60]:
-        groupedSentence = lda_modeling.groupSentence(paragraph)   
-        #print("CHANGES HERE" , "\n ", "\n")    
-        classify(groupedSentence)
-        ##print(bestGrouping)
-        
-def main():
-    alphaValues = ['symmetric', 'asymmetric', 'auto', 0.1, 0.01, 0.001, 0.0001, 0.00001, 0.000001]
-    etaValues=[None, 'auto', 0.1, 0.01, 0.001, 0.0001, 0.00001, 0.000001]
-    sentClassify()
-
-main()
