@@ -8,6 +8,7 @@ from gensim.models import CoherenceModel
 import re
 import pyLDAvis
 import pyLDAvis.gensim
+import string
 
 class TopicModeling:    
 
@@ -30,16 +31,19 @@ class TopicModeling:
         self._word_tokenizer = tokenize.RegexpTokenizer(r"[a-zA-Z]{3,}(?:-[a-zA-Z]+)+|[a-zA-Z]{3,}(?:'t)?")
         # creates lemmatizer
         self._lemmatizer = WordNetLemmatizer()
-        self._topicNum = 1
+        self._topicNum = 3
 
     def setTopicNum(self, topics):
         # mainly used for testing
         self._topicNum = topics
 
-    def groupSentence(self, paragraph, alpha, eta):
+    def groupSentence(self, paragraph, alpha='asymmetric', eta=0.000001):
         """Group sentences by similar topic"""
+        paragraph = paragraph.replace('Fig.', 'Fig,')
         # separates paragraph into individual sentences
         sentenceList = tokenize.sent_tokenize(paragraph)
+        # making sure no empty strings or strings with only special characters were included
+        sentenceList = [sentence for sentence in sentenceList if sentence != "" and not all(t in string.punctuation for t in sentence)] 
 
         # preprocessing for lda
         self.processedSentenceList = self.preprocessing(sentenceList)
@@ -55,14 +59,11 @@ class TopicModeling:
 
         # print(self.lda_model.print_topics())
 
-        # initializing grouped sentence by topic
-        # groupedSentenceList = [[] for i in range(self._topicNum)]
         groupedSentenceList = []
         previousTopicNum = -1
         
-        # NOTE: will be changing this to try to make sequential groupings
+        # grouping sequential sentences with the same topic together
         for i in range(len(self.corpus)):
-            # find topic which has the highest score for the sentence
             # returns tuple that contains the topic index and highest score value
             indexScoreTup = sorted(self.lda_model[self.corpus[i]], key= lambda tup : tup[1], reverse=True)[0]
             # isolates the topic index
@@ -97,11 +98,8 @@ class TopicModeling:
 
         return processedSentenceList
 
-    def alterTopicNum(self, sentenceNum):
-        """Dynamically alter the topic number in response to how many sentences needs to be classified"""
-
     def coherenceScore(self):
-        """Gets the coherence score of the current model"""
+        """Gets the coherence score of the current model (as well as word count if needed)"""
         coherence = CoherenceModel(model=self.lda_model, corpus=self.corpus, dictionary=self.dictionary, texts=self.processedSentenceList, coherence='c_npmi')
         coherenceScore = coherence.get_coherence()
         return (coherenceScore, self.num_tokens)
@@ -110,3 +108,6 @@ class TopicModeling:
         """Visualizes the current lda model"""
         visualizeLDA = pyLDAvis.gensim.prepare(self.lda_model, self.corpus, self.dictionary)
         pyLDAvis.show(visualizeLDA)
+
+    def getNumTokens(self):
+        return self.num_tokens

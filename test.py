@@ -4,13 +4,21 @@ import numpy as np
 import os.path
 import time
 import winsound
+import csv
 
 class GroupedSentence:
-    def __init__(self, numWords, coherenceList, bestTopicNum, grouping):
+    def __init__(self, paragraphIndex, numWords, coherenceList, bestTopicNum, grouping):
+        self.paragraphIndex = paragraphIndex
         self.numWords = numWords
         self.coherenceList = coherenceList
         self.bestTopicNum = bestTopicNum
         self.bestGrouping = grouping
+
+def logData(eta, paragraphNum, numWords, bestTopicNum, CoherenceScores):
+    with open('BestTopicNum_Coherence-' + str(eta).replace('.', '_') + '.csv', 'a', newline='') as csvfile:
+        logger = csv.writer(csvfile)
+        logger.writerow([eta, paragraphNum, numWords, bestTopicNum] + CoherenceScores)
+
 
 def testSingleHyperParameter(numParagraph, alpha, eta):
     lda_modeling = TopicModeling()
@@ -117,7 +125,7 @@ def testSingleHyperParameter(numParagraph, alpha, eta):
 
 # -------------------------------------------------------------------------------------------------------
 
-def testHyperParameters(numParagraph, alpha, etaValues):
+def testHyperParameters(alpha, etaValues, startParagraph=0, endParagraph=0):
     lda_modeling = TopicModeling()
 
     with open('Ch1-HumanGeo.txt', 'r', encoding='utf-8') as txt:
@@ -145,7 +153,10 @@ def testHyperParameters(numParagraph, alpha, etaValues):
         maxCoherence = -9999
         bestGrouping = ""
 
-        for paragraph in paragraphs[:numParagraph]:
+        paraIndex = startParagraph if startParagraph != 0 else 1
+        start = startParagraph - 1 if startParagraph != 0 else 0
+        end = endParagraph if endParagraph != 0 else len(paragraphs)
+        for paragraph in paragraphs[start:end]:
             for j in range(startTopicNum, endTopicNum):
                 lda_modeling.setTopicNum(j)
                 groupedSentence = lda_modeling.groupSentence(paragraph, alpha, eta)
@@ -156,16 +167,18 @@ def testHyperParameters(numParagraph, alpha, etaValues):
                     bestGrouping = groupedSentence
                     maxCoherence = c
 
-            gs = GroupedSentence(wordCount, tempCoherence, bestTopicNum, bestGrouping)
+            gs = GroupedSentence(paraIndex, wordCount, tempCoherence, bestTopicNum, bestGrouping)
             print(bestGrouping)
             print(tempCoherence)
+            logData(eta, paraIndex, wordCount, bestTopicNum, tempCoherence)
             groupSentObjList.append(gs)
             maxCoherence = -9999
             tempCoherence = []
+            paraIndex += 1
 
 
         output.append("Eta=" + str(eta).replace('.', '_') + "\n")
-        output += [str(x.bestGrouping) + "\n\n" for x in groupSentObjList]
+        output += [str(x.paragraphIndex) + ": " + str(x.bestGrouping) + "\n\n" for x in groupSentObjList]
         output.append("--------------------------------------------------------------\n")
 
         groupSentObjList.sort(key=lambda x: x.numWords)
@@ -225,28 +238,118 @@ def testHyperParameters(numParagraph, alpha, etaValues):
     start, end = a[0][0].get_ylim()
     plt.setp(a, xticks=[2, 3, 4, 5], yticks=np.arange(np.floor(start * 10) / 10, np.ceil(end * 10) / 10, 0.05))
     fig.subplots_adjust(left=0.07, bottom=0.13, top=0.89, wspace=0.04)
-    fig.savefig('HyperparameterTestingGraphs/' + 'coherenceGraph-Alpha' + str(alpha).replace('.', '_') + '.png')
+    fig.savefig('HyperparameterTestingGraphs-Asymmetric/' + 'coherenceGraph-Alpha' + str(alpha).replace('.', '_') + '.png')
     
     fig2.text(0.5, 0.04, 'Word Count', ha='center')
     fig2.text(0.04, 0.5, 'Best Topic Number', va='center', rotation='vertical')
     fig2.subplots_adjust(left=0.07, bottom=0.13, top=0.89, wspace=0.04)
-    fig2.savefig('BestTopicNum/' + 'bestTopic-Alpha' + str(alpha).replace('.', '_') + '.png')
+    fig2.savefig('BestTopicNum-Asymmetric/' + 'bestTopic-Alpha' + str(alpha).replace('.', '_') + '.png')
 
     fileName = 'resultBestGrouping-' + 'Alpha' + str(alpha).replace('.', '_') + '.txt'
     path = os.path.dirname(__file__)
-    folder = "BestGroupingTexts/" + fileName
+    folder = "BestGroupingTexts-Asymmetric/" + fileName
 
     with open(os.path.join(path, folder), 'w') as result:
         result.writelines(output)
+
+def createMultiGraphs(alpha, etaValues):
+    rowSize = 2
+    colSize = 4
+
+    startTopicNum = 2
+    endTopicNum = 6
+
+    fig, a = plt.subplots(nrows=rowSize, ncols=colSize, sharex=True, sharey=True, figsize=(24, 5))
+    fig.suptitle("Average Coherence Score vs Number of Topics: Alpha=" + str(alpha))
+
+    fig2, a2 = plt.subplots(nrows=rowSize, ncols=colSize, sharex=True, sharey=True, figsize=(24, 5))
+    fig2.suptitle("Best Topic Number vs Word Count: Alpha=" + str(alpha))
+
+    for eta in etaValues:
+        groupSentObjList = []
+
+        with open('BestTopicNum_Coherence-' + str(eta).replace('.', '_') + '.csv', 'r') as csvFile:
+            readCSV = csv.reader(csvFile, delimiter=',')
+            for row in readCSV:
+                coherenceList = [float(x) for x in row[4:]]
+                gs = GroupedSentence(int(row[1]), int(row[2]), coherenceList, int(row[3]), [])
+                groupSentObjList.append(gs)
+
+        groupSentObjList.sort(key=lambda x: x.numWords)
+        
+        wordRange = []
+        averageCoherence = []
+        wordBound = 10
+        tempGSObj = []
+
+        index = 0
+
+        while index < len(groupSentObjList):
+            gs = groupSentObjList[index]
+            if gs.numWords < wordBound and gs.numWords >= wordBound - 10:
+                tempGSObj.append(gs)
+                index += 1
+            elif len(tempGSObj) != 0:
+                tempAvgCoherence = []
+                for i in range(endTopicNum - startTopicNum):
+                    avg = np.mean([x.coherenceList[i] for x in tempGSObj])
+                    tempAvgCoherence.append(avg)
+                averageCoherence.append(tempAvgCoherence)
+                wordRange.append(str(wordBound - 10) + " - " + str(wordBound - 1))
+                wordBound += 10
+                tempGSObj = []
+            else:
+                wordBound += 10
+
+        if len(tempGSObj) != 0:
+            tempAvgCoherence = []
+            for i in range(endTopicNum - startTopicNum):
+                avg = np.mean([x.coherenceList[i] for x in tempGSObj])
+                tempAvgCoherence.append(avg)
+            averageCoherence.append(tempAvgCoherence)
+            wordRange.append(str(wordBound - 10) + " - " + str(wordBound - 1))
+
+        etaIndex = etaValues.index(eta)
+        row = etaIndex//(colSize)
+        col = etaIndex % (colSize)
+        print(alpha, ': ', etaIndex)
+
+        a[row][col].set_title('Eta=' + str(eta))
+        a2[row][col].set_title('Eta=' + str(eta))
+
+        for i in range(len(wordRange)):
+            a[row][col].plot([2, 3, 4, 5], averageCoherence[i], label=wordRange[i])
+        
+        a2[row][col].scatter([x.numWords for x in groupSentObjList], [x.bestTopicNum for x in groupSentObjList])
+
+        a2[row][col].text(155, 4.7, 'Avg=' + str(round(np.mean([x.bestTopicNum for x in groupSentObjList]), 3)))
+
+
+    handles, labels = a[0][0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc='upper right', title="Word Count")
+    fig.text(0.5, 0.04, 'Number of Topics', ha='center')
+    fig.text(0.04, 0.5, 'Coherence Score', va='center', rotation='vertical')
+    start, end = a[0][0].get_ylim()
+    plt.setp(a, xticks=[2, 3, 4, 5], yticks=np.arange(np.floor(start * 10) / 10, np.ceil(end * 10) / 10, 0.05))
+    fig.subplots_adjust(left=0.07, bottom=0.13, top=0.89, wspace=0.04)
+    fig.savefig('HyperparameterTestingGraphs-Asymmetric/' + 'coherenceGraph-Alpha' + str(alpha).replace('.', '_') + '.png')
+    
+    fig2.text(0.5, 0.04, 'Word Count', ha='center')
+    fig2.text(0.04, 0.5, 'Best Topic Number', va='center', rotation='vertical')
+    fig2.subplots_adjust(left=0.07, bottom=0.13, top=0.89, wspace=0.04)
+    fig2.savefig('BestTopicNum-Asymmetric/' + 'bestTopic-Alpha' + str(alpha).replace('.', '_') + '.png')
+
 
 
 def main():
     alphaValues = ['symmetric', 'asymmetric', 'auto', 0.1, 0.01, 0.001, 0.0001, 0.00001, 0.000001]
     etaValues=[None, 'auto', 0.1, 0.01, 0.001, 0.0001, 0.00001, 0.000001]
-    for alpha in alphaValues[2:]:
-        testHyperParameters(8, alpha, etaValues)
+
+    # testHyperParameters('asymmetric', etaValues, startParagraph=91)
 
     # testSingleHyperParameter(5, alphaValues[1], etaValues[4])
+
+    createMultiGraphs('asymmetric', etaValues)
 
 
 if __name__ == '__main__':
