@@ -2,14 +2,7 @@ import csv
 import spacy
 nlp = spacy.load('en_core_web_sm')
 from spacy import displacy
-import matplotlib.pyplot as plt
-import numpy as np
-import scipy, pylab
-from sklearn.cluster import KMeans
 from sklearn import svm
-from matplotlib import style
-style.use("ggplot")
-from lda import TopicModeling
 from joblib import dump, load
 
 
