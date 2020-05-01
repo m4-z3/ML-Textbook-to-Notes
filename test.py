@@ -252,6 +252,7 @@ def testHyperParameters(alpha, etaValues, startParagraph=0, endParagraph=0):
     with open(os.path.join(path, folder), 'w') as result:
         result.writelines(output)
 
+
 def createMultiGraphs(alpha, etaValues):
     rowSize = 2
     colSize = 4

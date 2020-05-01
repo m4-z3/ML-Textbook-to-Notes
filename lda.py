@@ -31,7 +31,7 @@ class TopicModeling:
         self._word_tokenizer = tokenize.RegexpTokenizer(r"[a-zA-Z]{3,}(?:-[a-zA-Z]+)+|[a-zA-Z]{3,}(?:'t)?")
         # creates lemmatizer
         self._lemmatizer = WordNetLemmatizer()
-        self._topicNum = 3
+        self._topicNum = 2
 
     def setTopicNum(self, topics):
         # mainly used for testing
