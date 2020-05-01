@@ -10,49 +10,97 @@ from sklearn import svm
 from matplotlib import style
 style.use("ggplot")
 from lda import TopicModeling
+from joblib import dump, load
 
+clf = load('model.joblib') 
 
 def classify(data): 
-    with open('data.csv', newline='') as csvfile:
-        readCSV = csv.reader(csvfile, delimiter=',')
-        header = next(readCSV)
-        rows = [[row[0], int(row[1]), int(row[2])] for row in readCSV]
-        ary = []
-        len_sent = []
-        for row in rows:
-            doc = nlp(row[0])
-            len_sent.append(len(row[0]))
-            ary.append(len(doc.ents))
 
-    x = list(zip(len_sent[0:20], ary[0:20]))
-    y = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    clf = svm.SVC(kernel= 'linear', C= 1.0)
-    clf.fit(x,y)
+    # print("length of data: ")
+    # print(len(data))
+    # print("\n")
+    # for i in range(len(data)):
+    #     print(len(data[i]))
+    #     print("\n")
 
-
-    entities = [0 for x in range(len(data))]
-    total_length = [0 for x in range(len(data))]
-    for i in range(0, len(data)):
-        doc = nlp(data[i][0])
-        entities[i] = ((len(doc.ents)))
-        total_length[i] = (len(data[i][0]))
-
-    predictions = list(zip(total_length, entities))
-
-    classify = clf.predict(predictions)
-    ## append mode I believe 
-    file1 = open("Notes.txt","a") 
-    file1.write("-" + data[0][0])
-    file1.write("\n")
-    for i in range(1, len(classify)): 
-        if(classify[i] == 1):
-            file1.write("\t" + "\t" + "-" + data[i][0])
+    file1 = open("Notes.txt","a")
+    for i in range(len(data)):
+        entities = []
+        total_length = []
+        predict_array = []
+        for j in range(len(data[i])): 
+            doc = nlp(data[i][j])
+            entities.append((len(doc.ents)))
+            total_length.append((len(data[i][j])))
+            predictions = list(zip(total_length, entities))
+            predict_array = clf.predict(predictions)
         
-        elif(classify[i] == 0):
-            file1.write("-" + data[i][0])
+        file1.write("-" + data[i][0])
         file1.write("\n")
+        
+        for y in range(1,len(predict_array)): 
+            if(predict_array[y] == 1 and y != 0): 
+                file1.write("\t" + "\t" + "-" + data[i][y])
+                file1.write("\n")
+            elif(predict_array[y] == 0 and y != 1):
+                file1.write("\t" + "-" + data[i][y])
+                file1.write("\n")
+    file1.write("\n")
 
-    file1.write("\n") 
+        # for x in range(len(data[i])):
+        #     print(len(data[i][x]))
+        #     for y in range(len(data[i][x])): 
+                
+            #     if(predict_array[0][y] == 1 and y != 0): 
+            #         file1.write("\t" + "\t" + "-" + data[i][y])
+            #         file1.write("\n")
+            #     elif(predict_array[0][y] == 0 and y != 1):
+            #         file1.write("-" + data[i][y])
+            #         file1.write("\n")
+            # file1.write("\n")
+
+
+
+    # col = []
+    # for i in range(0, len(data)): 
+    #     col.append(len(data[i]))
+
+    # classify_data = []
+    # for i in range(0, len(data)):
+    #     print("Changing the paragraph")
+    #     entities = []
+    #     total_length = []
+    #     predict_ary = []
+    #     for j in range(0, len(data[i])):
+    #         doc = nlp(data[i][j])
+    #         entities.append((len(doc.ents)))
+    #         total_length.append((len(data[i][j])))
+    #         predictions = list(zip(total_length, entities))
+    #         predict_ary.append(np.array((clf.predict(predictions))))
+    #     #print(predict_ary)
+    #     #file1 = open("Notes.txt","a")
+    #     print(len(predict_ary[i]))
+    #     print(len(data[i][j]))
+        # for x in range(len(data[i])):
+        #     for y in range()
+        
+
+
+    #simple_array[1:3]
+    
+    ## append mode I believe 
+    #  
+    # #
+    # for i in range(0, len(classify)): 
+    #     for j in range(0, len(data[i])):
+    #         if(classify[i] == 1 and j != 0):
+    #             file1.write("\t" + "\t" + "-" + data[i][j])
+    #             file1.write("\n")
+    #         elif(classify[i] == 0):
+    #             file1.write("-" + data[i][j])
+    #             file1.write("\n")
+    #     file1.write("\n")
+        
 
 
 
@@ -61,8 +109,10 @@ def sentClassify(numParagraph, alpha, eta):
     with open('Ch1-HumanGeo.txt', 'r', encoding='utf-8') as txt:
         paragraphs = txt.readlines()
     lda_modeling.setTopicNum(2)
-    for paragraph in paragraphs[:len(paragraphs)]:
-        groupedSentence = lda_modeling.groupSentence(paragraph, alpha, eta)       
+    
+    for paragraph in paragraphs[0:60]:
+        groupedSentence = lda_modeling.groupSentence(paragraph, alpha, eta)   
+        #print("CHANGES HERE" , "\n ", "\n")    
         classify(groupedSentence)
         ##print(bestGrouping)
         
