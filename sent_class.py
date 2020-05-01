@@ -1,4 +1,3 @@
-import csv
 import spacy
 nlp = spacy.load('en_core_web_sm')
 from spacy import displacy
