@@ -39,7 +39,10 @@ class TopicModeling:
 
     def groupSentence(self, paragraph, alpha='asymmetric', eta=0.000001):
         """Group sentences by similar topic"""
-        paragraph = paragraph.replace('Fig.', 'Fig,')
+        # prevent separating at periods which don't denote the end of a sentence
+        wordWithPeriod = ['Fig.', 'Ms.', 'Mrs.', 'Mr.', 'Dr.', 'St.']
+        for w in wordWithPeriod:
+            paragraph = paragraph.replace(i, w.replace('.', ','))
         # separates paragraph into individual sentences
         sentenceList = tokenize.sent_tokenize(paragraph)
         # making sure no empty strings or strings with only special characters were included
@@ -55,7 +58,7 @@ class TopicModeling:
         self.corpus = [self.dictionary.doc2bow(sentence) for sentence in self.processedSentenceList]
         # NOTE: will be changing hyper parameters
         # creating the lda model
-        self.lda_model = LdaModel(corpus=self.corpus, id2word=self.dictionary, num_topics=self._topicNum, random_state=100, chunksize=3, update_every=0, passes=60, alpha=alpha, eta=eta)
+        self.lda_model = LdaModel(corpus=self.corpus, id2word=self.dictionary, num_topics=self._topicNum, random_state=100, chunksize=3, update_every=1, passes=60, alpha=alpha, eta=eta)
 
         # print(self.lda_model.print_topics())
 
