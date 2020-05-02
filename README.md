@@ -4,3 +4,5 @@ Assuming you have a txt file where each line represents a paragraph from a textb
 python text2bullets.py [insert name of file here]
 
 This will return a Notes.txt document which will have all the textbook paragraphs translated into indented bullet points.
+
+If any errors occur, try running model.py to see if the error may have been an incompatable model
