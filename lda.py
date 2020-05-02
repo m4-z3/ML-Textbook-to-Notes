@@ -56,9 +56,9 @@ class TopicModeling:
 
         # create corpus (which creates bag of words)
         self.corpus = [self.dictionary.doc2bow(sentence) for sentence in self.processedSentenceList]
-        # NOTE: will be changing hyper parameters
+
         # creating the lda model
-        self.lda_model = LdaModel(corpus=self.corpus, id2word=self.dictionary, num_topics=self._topicNum, random_state=100, chunksize=3, update_every=1, passes=60, alpha=alpha, eta=eta)
+        self.lda_model = LdaModel(corpus=self.corpus, id2word=self.dictionary, num_topics=self._topicNum, random_state=100, chunksize=4, update_every=1, passes=60, alpha=alpha, eta=eta)
 
         # print(self.lda_model.print_topics())
 

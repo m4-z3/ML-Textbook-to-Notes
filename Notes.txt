@@ -11,8 +11,8 @@
 	-Understanding and explaining this diversity is the mission of human geography.
 
 -The word “globalization” is all around us.
--Globalization is a set of processes that are increasing interactions, deepening relationships, and heightening interdependence without regard to country borders.
-		-It is also a set of outcomes that are felt from these global processes—outcomes that are unevenly distributed and differently manifested across the world.
+		-Globalization is a set of processes that are increasing interactions, deepening relationships, and heightening interdependence without regard to country borders.
+-It is also a set of outcomes that are felt from these global processes—outcomes that are unevenly distributed and differently manifested across the world.
 
 -All too often, discussions of globalization focus on the pull between global—seen as a blanket covering the world—and local—seen as a continuation of the traditional despite the blanket of globalization.
 -Geographers are in a place to understand globalization as much more than this.
@@ -64,13 +64,13 @@
 -It lasted from 1826 to 1837, when cholera crossed the Atlantic and attacked North America.
 
 -When the pandemic that began in 1842 reached England in the 1850s, cholera swept through the Soho District of London.
-		-Snow mapped the Soho District, marking all the area’s water pumps—from which people got their water supply for home use—with a P and marking the residence of each person who died from cholera with a dot ( Fig, 1.5 ).
+		-Dr, Snow mapped the Soho District, marking all the area’s water pumps—from which people got their water supply for home use—with a P and marking the residence of each person who died from cholera with a dot ( Fig, 1.5 ).
 -Approximately 500 deaths occurred in Soho, and as the map took shape, Snow noticed that an especially large number of those deaths clustered around the water pump on Broad Street.
 		-At the doctor’s request, city authorities removed the handle from the Broad Street pump, making it impossible to get water from that pump.
--The result was dramatic: almost immediately the number of reported new cases fell to nearly zero.
+	-The result was dramatic: almost immediately the number of reported new cases fell to nearly zero.
+-Snow’s theory about the role of water in the spread of cholera was confirmed.
 
--Dr.
-		-Snow and his colleagues advised people to boil their water, but it would be a long time before his advice reached all those who needed to know, and in any case many people simply did not have the ability to do so.
+-Dr, Snow and his colleagues advised people to boil their water, but it would be a long time before his advice reached all those who needed to know, and in any case many people simply did not have the ability to do so.
 
 -Cholera has not been defeated completely, however, and in some ways the risks have been rising in recent years rather than falling ( Fig, 1.6 ).
 		-In the teeming shantytowns of the growing cities of the developing world, and in the refugee camps of Africa and Asia, cholera remains a threat.
@@ -79,8 +79,7 @@
 		-When the cholera outbreak occurred in 2006, Angola’s civil war had ended, which allowed people to move around the country easier and helped spread cholera quickly.
 
 -Hygiene prevents cholera, but contaminated water abounds in much of the tropical world’s cities.
-	-Dr.
-		-Snow achieved a victory through the application of geographical reasoning, but the war against cholera is not yet won.
+		-Dr, Snow achieved a victory through the application of geographical reasoning, but the war against cholera is not yet won.
 
 -The fruits of geographical inquiry were life-saving in this case, but the work of geographers typically goes further in life-understanding.
 		-Geographers want to understand why people do different things in different places and how the relationship between people and the physical world varies across space.
@@ -110,13 +109,12 @@
 -A spatial perspective invites consideration of the relationship among phenomena in individual places—including the relationship between humans and the physical world.
 		-Why did the Army Corps of Engineers alter Florida’s physical environment so drastically when they drained part of the Everglades?
 -Have the changes in Florida’s environment created an easier path of destruction for hurricanes?
-		-Why is the Army Corps of Engineers again changing the course of the Kissimmee River, and what does that mean for farmers around the river and residential developments in the south of Florida?
--Geographers study the reciprocal relationship between humans and environments.
+-Why is the Army Corps of Engineers again changing the course of the Kissimmee River, and what does that mean for farmers around the river and residential developments in the south of Florida?
 
 -The third theme of geography is the region.
 	-Instead, features tend to be concentrated in particular areas, which we call regions.
 		-Geographers use fieldwork, quantitative, and qualitative methods to develop insightful descriptions of different regions of the world.
--Novelist James Michener once wrote that whenever he started writing a new book, he fi rst prepared himself by turning to books written by regional geographers about the area where the action was to occur.
+		-Novelist James Michener once wrote that whenever he started writing a new book, he fi rst prepared himself by turning to books written by regional geographers about the area where the action was to occur.
 -Understanding the regional geography of a place allows us to make sense of much of the information we have about places and digest new information about places as well.
 
 -The fourth theme is represented by the seemingly simple word place.
@@ -135,7 +133,7 @@
 		-Geographers use the term landscape to refer to the material character of a place, the complex of natural features, human structures, and other tangible objects that give a place a particular form.
 		-Human geographers are particularly concerned with the cultural landscape, the visible imprint of human activity on the landscape.
 		-The geographer whose name is most closely identifi ed with this concept is former University of California at Berkeley professor Carl Sauer.
--In 1927, Sauer wrote an article entitled “Recent Developments in Cultural Geography,” in which he argued that cultural landscapes are comprised of the “forms superimposed on the physical landscape” by human activity.
+		-In 1927, Sauer wrote an article entitled “Recent Developments in Cultural Geography,” in which he argued that cultural landscapes are comprised of the “forms superimposed on the physical landscape” by human activity.
 
 -No place on Earth is in a “pristine” condition— humans have made an imprint on every place on the planet ( Fig, 1.8 ).
 		-We can see the cultural landscape in the layers of buildings, roads, memorials, churches, fi elds, and homes that human activities over time have imprinted on the landscape.
@@ -148,9 +146,8 @@
 -The Tanzanian city of Dar es Salaam provides an interesting urban example of sequent occupance.
 -Next, German colonizers imprinted a new layout and architectural style (wood-beamed Teutonic) when they chose the city as the center of their East African colonies in 1891.
 		-After World War I, when the Germans were ousted, a British administration took over the city and began yet another period of transformation.
--The British encouraged immigration from their colony in India to Tanzania.
-		-The new migrant Asian population created a zone of three- and four-story apartment houses, which look as if they were transplanted from Bombay, India ( Fig, 1.9left and right).
-	-Then, in the early 1960s, Dar es Salaam became the capital of newly independent Tanzania.
+	-The British encouraged immigration from their colony in India to Tanzania.
+-The new migrant Asian population created a zone of three- and four-story apartment houses, which look as if they were transplanted from Bombay, India ( Fig, 1.9left and right).
 -Thus, the city experienced four stages of cultural dominance in less than one century, and each stage of the sequence remains imprinted in the cultural landscape.
 
 -The cultural landscape can be seen as a kind of book offering clues into each chapter of the cultural practices, values, and priorities of its various occupiers.
@@ -165,8 +162,8 @@
 		-Imagine taking an orange, drawing a dot on it with a marker, and then trying to describe the exact location of that dot to someone who is holding another orange so she can mark the same spot on her orange.
 		-If you draw and number the same coordinate system on both oranges, the task of drawing the absolute location on each orange is not only doable but is simple.
 		-Plotting absolute locations to make a reference map is simple with the use of a coordinate system, and the system most frequently used is latitude and longitude.
--For example, the absolute location of Chicago is 41 degrees, 53 minutes North Latitude and 87 degrees, 38 minutes West Longitude.
--Using these coordinates, you can plot Chicago on any globe or map that is marked with latitude and longitude.
+		-For example, the absolute location of Chicago is 41 degrees, 53 minutes North Latitude and 87 degrees, 38 minutes West Longitude.
+	-Using these coordinates, you can plot Chicago on any globe or map that is marked with latitude and longitude.
 
 -The establishment of satellite-based global positioning system (GPS) allows us to locate things on the surface of the Earth with extraordinary accuracy.
 		-Researchers collect data quickly and easily in the fi eld, and low-priced units are encouraging fishers, hunters, and hikers to use GPS in their hobbies.
@@ -179,7 +176,7 @@
 		-Descriptors such as “Chicago is on Lake Michigan, south of Milwaukee” or “Chicago is located where the cross-country railroads met in the 1800s” or “Chicago is the hub of the corn and soybean markets in the Midwest” are all descriptors of Chicago relative to other features.
 	-In the southern Wisconsin, northern Illinois, and western Indiana region, all roads lead to Chicago ( Fig, 1.10 ).
 		-Within this region, people defi ne much of their lives relative to Chicago because of the tight interconnectedness between Chicago and the region.
--Northwestern Indiana is so connected to Chicago that they have a time zone separate from the rest of Indiana—allowing people in northwestern Indiana to stay in the same time zone as Chicago.
+		-Northwestern Indiana is so connected to Chicago that they have a time zone separate from the rest of Indiana—allowing people in northwestern Indiana to stay in the same time zone as Chicago.
 
 -Absolute locations do not change, but relative locations are constantly modifi ed and change over time.
 		-Today, it is a suburb of Washington, D.C., with commuter trains, van pools, buses, and cars moving commuters between their homes in Fredericksburg and their workplaces in metropolitan Washington, D.C. During the Civil War, several bloody battles took place in Fredericksburg as the North and South fought over the land halfway between their wartime capitals.
@@ -213,15 +210,15 @@
 		-The map of world precipitation ( Fig, 1.11 ) is a generalized map of mean annual precipitation received around the world.
 		-The areas shaded burgundy, dark blue, and vibrant green are places that receive the most rain, and those shaded in orange receive the least rain on average.
 	-Take a pen and trace along the equator on the map.
--Notice how many of the high-precipitation areas on the map are along the equator.
+	-Notice how many of the high-precipitation areas on the map are along the equator.
 		-The consistent heating of the equator over the course of the entire year brings consistent precipitation to the equatorial region.
--At the scale of the world, we can see general trends in precipitation, such as this, but it is diffi cult to see the microscale climates of intense precipitation areas everywhere in the world.
+		-At the scale of the world, we can see general trends in precipitation, such as this, but it is diffi cult to see the microscale climates of intense precipitation areas everywhere in the world.
 
 -Geographic studies include both long- and short-term environmental change.
 		-Geographers monitor the Earth from a distance, using remote sensing, using technology that is a distance away from the place being studied.
 		-Remotely sensed data are collected by satellites and aircraft (airplanes, balloons) and are almost instantaneously available.
 -After a major weather event, such as the 2008 fl oods in the Mississippi River Valley or the unprecedented hurricane season in the Gulf of Mexico in 2005, remotely sensed data show us the major areas of impact ( Fig, 1.12 ).
--A remotely sensed image highlights the eye of a hurricane, and photos taken on the ground show the impact and destruction ( Fig, 1.13 ).
+		-A remotely sensed image highlights the eye of a hurricane, and photos taken on the ground show the impact and destruction ( Fig, 1.13 ).
 
 -In a government that is harming its citizens or that will not reliably allow foreign aid to help its citizens, remote sensing helps geographers understand the physical and human geography of the place.
 -Google Earth is a free, web-based user-friendly set of remotely sensed images from around the world woven together and accessible to anyone with Internet access.
@@ -237,14 +234,14 @@
 -In this case, a geographer can draw a line around a group of people and ask the computer program to tally how many voters are inside the region, determine what the racial composition is of the district, and show how many of the current political representatives live within the new district’s boundaries.
 
 -Geographers trained in GIS apply the software technologies in countless fields today.
--Students who earn undergraduate degrees in geography are employed by software companies, government agencies, and businesses to use GIS in surveying wildlife, mapping soils, analyzing natural disasters, following diseases, assisting fi rst responders, planning cities, plotting transportation improvements, and tracking weather systems.
--For example, a group of geographers working for one GIS company tailors the GIS software to serve the branches of the military and the defense intelligence community.
+		-Students who earn undergraduate degrees in geography are employed by software companies, government agencies, and businesses to use GIS in surveying wildlife, mapping soils, analyzing natural disasters, following diseases, assisting fi rst responders, planning cities, plotting transportation improvements, and tracking weather systems.
+		-For example, a group of geographers working for one GIS company tailors the GIS software to serve the branches of the military and the defense intelligence community.
 		-The vast amounts of intelligence data gathered by the various intelligence agencies can be integrated into a GIS and then analyzed spatially.
 		-Geographers working in the defense intelligence community can use GIS to query a vast amount of intelligence, interpret spatial data, and make recommendations on issues of security and defense.
 
 -The amount of data digestible in a GIS, the power of the location analysis possible with computer hardware, and the ease of analysis with GIS software applications allow geographers to answer complicated questions using GIS.
 -For example, geographer Korine Kolivras analyzed the probability of dengue fever outbreaks in Hawaii using GIS ( Fig, 1.15 ).
-		-The maps Kolivras produced may look as simple and straightforward as the cholera maps produced by Dr. John Snow in the 1800s, but the amount of data that went into Kolivras’s analysis is staggering in comparison.
+		-The maps Kolivras produced may look as simple and straightforward as the cholera maps produced by Dr, John Snow in the 1800s, but the amount of data that went into Kolivras’s analysis is staggering in comparison.
 	-Dengue fever is carried by a particular kind of mosquito called the Aedes mosquito.
 		-Kolivras analyzed the breeding conditions needed for the Aedes mosquito, including precipitation, topography, and several other variables, to predict what places in Hawaii are most likely to experience an outbreak of dengue fever.
 
@@ -281,4 +278,227 @@
 -Geographers are also interested in how people use scale politically.
 		-Local political movements, such as like the Zapatistas in southern Mexico, have learned to rescale their actions—to involve players at other scales and create a global outcry of support for their position.
 		-By taking their political campaign from the individual and local scale to the national scale through their protests against the North American Free Trade Agreement (NAFTA), and then effectively using the Internet to wage a global campaign, the Zapatistas gained attention from the world media, a feat few local political movements achieve.
+
+-Geographer Victoria Lawson uses the term jumping scale to describe rescaling.
+-She compares the ways in which Western countries, multinational corporations, and the World Trade Organization all take products and ideas created in Western places and by Western corporations and globalize all rights to profi ts from them through intellectual property law.
+		-Efforts to push European and American views of intellectual property on the globe negate other local and regional views of products and ideas.
+-To the West, rice is a product that can be owned, privatized, and bought and sold.
+		-To East Asians, rice is integral to culture, and new rice strains and new ideas about growing rice can help build community, not just profi t. Lawson explains that taking a single regional view and jumping scale to globalize it legitimates that view and negates other regional and local views.
+
+-Geographers often divide the world into regions for analysis.
+	-In this book, we use examples from every region of the world, but our focus throughout is on human geography.
+	-Nongeographers use some form of the regional idea all the time, even in everyday conversation.
+		-When you plan or dream of a vacation in the Rockies, or a hiking trip in New England, or a cruise in the Caribbean, you are using regional notions to convey what you have in mind.
+	-Used this way, regions serve as informal frames of reference.
+
+-In geography, a region constitutes an area that shares similar characteristics.
+	-The criteria we choose to defi ne a region can be physical, cultural, functional, or perceptual.
+
+-When geographers choose one or more physical or cultural criteria to defi ne a region, we are looking for formal regions.
+		-A formal physical region is based on a shared physical geographic criterion, such as the karst region of China ( Fig, 1.18 ).
+
+-A formal region has a shared trait—it can be a shared cultural trait or a physical trait.
+-In a formal cultural region, people share one or more cultural traits.
+-For example, the region of Europe where French is spoken by a majority of the people can be thought of as a French-speaking region.
+		-If we shift scales to the world, the French-speaking formal region expands beyond France into former French colonies of Africa and into the overseas departments that are still associated politically with France.
+
+-A functional region is defi ned by a particular set of activities or interactions that occur within it.
+	-Functional regions have a shared political, social, or economic purpose.
+-For example, a city has a surrounding region within which workers commute, either to the downtown area or to subsidiary centers such as offi ce parks and shopping malls.
+-That entire urban area, defi ned by people moving toward and within it, is a functional region.
+		-Functional regions are not necessarily culturally homogeneous; instead, the people within the region function together politically, socially, or economically.
+		-The city of Chicago is a functional region, and the city itself is part of hundreds of functional regions—from the State of Illinois to the seventh federal reserve district.
+
+-Finally, regions may be primarily in the minds of people.
+		-Perceptual regions are intellectual constructs designed to help us understand the nature and distribution of phenomena in human geography.
+		-Geographers do not agree entirely on their properties, but we do concur that we all have impressions and images of various regions and cultures.
+	-These perceptions are based on our accumulated knowledge about such regions and cultures.
+	-Perceptual regions are not just curiosities.
+		-How people think about regions has infl uenced everything from daily activity patterns to large-scale international confl ict.
+		-A perceptual region can include people, their cultural traits, such as dress, food, and religion; places and their physical traits, such as mountains, plains, or coasts; and built environments, such as windmills, barns, skyscrapers, or beach houses.
+
+-But where is this Mid-Atlantic region?
+		-But where across Pennsylvania lies the boundary of this partly cultural, partly physical region, and on what basis can it be drawn?
+	-There is no single best answer ( Fig, 1.19 ).
+
+-Major news events help us create our perceptual regions by defi ning certain countries or areas of countries as part of a region.
+	-For most of us, that region included Iraq and Iran but stretched no farther east.
+		-As the hunt for Osama bin Laden began and the media focused attention on the harsh rule of the Taliban in Afghanistan, our perceptual region of the Middle East stretched farther east to incorporate Afghanistan and Pakistan.
+		-Scholars who specialize in the region had long studied the relationship between these places and areas to the west, but the similarities between Afghanistan and Pakistan and the rest of the Middle East were almost invisible to the general population.
+
+-Cultural geographer Wilbur Zelinsky tackled the enormous, complex task of defi ning and delimiting the perceptual regions of the United States and southern Canada.
+
+-In an article titled “North America’s Vernacular Regions,” he identifi ed 12 major perceptual regions on a series of maps (summarized in Fig, 1.20 ).
+		-For example, the more general term the West actually incorporates more specific regions, such as the Pacific Region and part of the Northwest.
+
+-The problem of defi ning and delimiting perceptual regions can be approached in several ways.
+		-One is to conduct interviews in which people residing within as well as outside a region are asked to respond to questions about their home and cultural environment.
+-Zelinsky used a different technique; he analyzed the telephone directories of 276 metropolitan areas in the United States and Canada, noting the frequency with which businesses and other enterprises use regional or locational terms (such as “Southern Printing Company” or “Western Printing”) in their listings.
+-The resulting maps show a close similarity between these perceptual regions and culture regions identifi ed by geographers.
+
+-Among the perceptual regions shown in Figure 1.20 , one, the South, is unlike any of the others.
+		-Even today, five generations after the Civil War, the Confederate flag still evokes strong sentiments from both those who revere the flag and those who revile it.
+
+-A “New South” has emerged over the past several decades, forged by Hispanic immigration, urbanization, movement of people from other parts of the United States to the South, and other processes.
+-But the South— especially the rural South—continues to carry imprints of a culture with deep historical roots.
+
+-If you drive southward from, say, Pittsburgh or Detroit, you will not pass a specifi c place where you enter this perceptual region.
+-You will note features in the cultural landscape that you perceive to be associated with the South (such as Waffl e House restaurants), and at some stage of the trip these features will begin to dominate the area to such a degree that you will say, “I am really in the South now.” This may result from a combination of features in the culture: the style of houses and their porches, items on a roadside restaurant menu (grits, for example), a local radio station’s music, the sound of accents that you perceive to be Southern, a succession of Baptist churches in a town along the way.
+-These combined impressions become part of your overall perception of the South as a region.
+
+-Such cultural attributes give a certain social atmosphere to the region, an atmosphere that is appreciated by many of its residents and is sometimes advertised as an attraction for potential visitors.
+		-“Experience the South’s warmth, courtesy, and pace of life,” said one such commercial, which portrayed a sun-drenched seaside landscape, a bowing host, and a couple strolling along a palm-lined path.
+
+-The South has its vigorous supporters and defenders, and occasionally a politician uses its embattled history to arouse racial antagonism.
+		-But today the South is so multifaceted, diverse, vigorous, and interconnected with the rest of the United States that its regional identity is much more complicated than traditional images suggest ( Fig, 1.21 ).
+	-This serves as an important reminder that perceptual regions are not static.
+-Images of the South are rapidly changing, and perceptions of the South as a region will change over time.
+
+-Regions—whether formal, functional, or percep tual— are ways of organizing humans geographically.
+		-They are a form of spatial classifi cation, a means of handling large amounts of information so we can make sense of it.
+
+-At the heart of human geography lies the concept of culture.
+-Culture refers not only to the music, literature, and arts of a society but also to all the other features of its way of life: prevailing modes of dress; routine living habits; food preferences; the architecture of houses and public buildings; the layout o f fi elds and farms; and systems of education, government, and law.
+-Culture is an all- encompassing term that identifi es not only the whole tangible lifestyle of peoples, but also their prevailing values and beliefs.
+
+-The concept of culture is closely identifi ed with the discipline of anthropology, and over the course of more than a century anthropologists have defi ned it in many different ways.
+		-Some have stressed the contributions of humans to the environment, whereas others have emphasized learned behaviors and ways of thinking.
+-Several decades ago the noted anthropologist E. Adamson Hoebel defi ned culture as [the] integrated system of learned behavior patterns which are characteristic of the members of a society and which are not the result of biological inheritance .
+-culture is not genetically predetermined; it is noninstinctive .
+-[culture] is wholly the result of social invention and is transmitted and maintained solely through communication and learning.
+
+-Hoebel’s emphasis on communication and learning anticipated the current view of culture as a system of meaning, not just a set of acts, customs, or material products.
+		-Clifford Geertz advanced this view in his classic work, The Interpretation of Cultures (1973), which has infl uenced much recent work in human geography.
+-Hence, human geographers are interested not just in the different patterns and landscapes associated with different culture groups, but in the ways in which cultural understandings affect both the creation and signifi cance of those patterns and landscapes.
+
+-Cultural geographers identify a single attribute of a culture as a culture trait.
+		-For example, the wearing of a turban can be a culture trait of certain Muslim societies; for centuries, it was obligatory for Muslim men to wear this headgear.
+		-Although it is no longer required everywhere, the turban continues to be a distinctive trait of many Muslim societies.
+
+-Culture traits are not necessarily confi ned to a single culture.
+		-More than one culture may exhibit a particular culture trait, but each will consist of a discrete combination of traits.
+	-Such a combination is referred to as a culture complex.
+	-In many cultures, the herding of cattle is a trait.
+	-However, cattle are regarded and used in different ways by different cultures.
+		-The Maasai of East Africa, for example, follow their herds along seasonal migration paths, consuming blood and milk as important ingredients of a unique diet.
+	-Cattle occupy a central place in Maasai existence; they are the essence of survival, security, and prestige.
+		-Although the Maasai culture complex is only one of many cattle-keeping complexes, no other culture complex exhibits exactly the same combination of traits.
+		-In Europe, cattle are milked, and dairy products, such as butter, yogurt, and cheese, are consumed as part of a diet very different from that of the Maasai.
+
+-A cultural hearth is an area where cultural traits develop and from which the cultural traits diffuse.
+	-Muhammad founded Islam in the 500s c.e.
+	-(current era) in and around the cities of Mecca and Medina on the Arabian Peninsula.
+	-Other culture traits, such as agriculture, can be traced to several hearths thousands of years apart.
+	-The term for a trait with many hearths that developed independent of each other is independent invention.
+
+-Diffusion occurs through the movement of people, goods, or ideas across space.
+		-The process of dissemination, the spread of an idea or innovation from its hearth (source area) to other places, is known as cultural diffusion.
+-Carl Sauer focused attention on this process in Agricultural Origins and Dispersals in which he defi ned the ancient hearths of agriculture and traced the diffusion of agricultural practices from the hearths.
+		-In 1970, Swedish geographer Torsten Hägerstrand published pioneering research on the role of time in the diffusion process.
+-Hägerstrand’s research revealed how time, as well as distance, affects individual human behavior and the diffusion of people and ideas.
+		-Geographers are still using principles of diffusion to model movement and diffusion through GIS and other geographic techniques.
+
+-Whether diffusion of a cultural trait occurs depends, in part, on time and distance from the hearth.
+	-Similarly, the acceptance of an innovation becomes less likely the longer it takes to reach its potential adopters.
+	-In combination, time and distance cause timedistance decay in the diffusion process.
+
+-Cultural barriers can also work against diffusion.
+		-Certain innovations, ideas, or practices are not acceptable or adoptable in particular cultures because of prevailing attitudes or even taboos.
+		-Prohibitions against alcoholic beverages, as well as certain forms of meat, fish, and other foods, restrict their consumption in certain areas.
+		-Cultural barriers against other practices, such as the use of contraceptives, also have inhibited diffusion processes.
+	-Cultural barriers can pose powerful obstacles to the spread of ideas as well as artifacts.
+
+-Geographers classify diffusion processes into two broad categories: expansion diffusion and relocation diffusion.
+		-Conta g ious Diffusion B. Hierarchial Diffusion Hearth Early diffusion Later diffusion Important person or place No diffusion LEGEND  Figure 1.22 Contagious and Hierarchical Diffusion.
+-© E. H. Fouberg, A.
+-B. Murphy, H. J. de Blij, and John Wiley & Sons, Inc. vation or idea develops in a hearth and remains strong there while also spreading outward ( Fig, 1.22 ).
+		-Later, for example, we will study the spread of Islam from its hearth on the Arabian Peninsula to Egypt and North Africa, through Southwest Asia, and into West Africa.
+	-This is a case of expansion diffusion.
+		-If we were to draw a series of maps of followers of Islam (Muslims) at 50-year intervals beginning in 620 c.e., the area of adoption of Islam would be larger in each successive period.
+
+-Expansion diffusion takes several forms.
+		-The spread of Islam is an example of contagious diffusion, a form of expansion diffusion in which nearly all adjacent individuals and places are affected.
+		-A disease can spread in this way, infecting almost everyone in a population (although not everyone may show symptoms of the disease).
+		-However, an idea such as a new fashion or new genre of music may not always spread throughout a contiguous population.
+-For example, the spread of Crocs footwear is a case of hierarchical diffusion, a pattern in which the main channel of diffusion is some segment of those who are susceptible to (or adopting) what is being diffused.
+-In the case of Crocs, founder Scott Seamans found a clog manufactured by a Canadian company that was created out of the unique croc resin material.
+		-He and two co-founders of the crocs company based the company in Boulder, Colorado, had the shoes manufactured, and sold them at boat shows in 2002 and 2003.
+		-Crocs footware diffused from boating enthusiasts to gardeners, to the American public—becoming especially popular among children, who adorned their crocs with Jibbitz, or charms designed for crocs.
+-The hierarchy of boaters, gardeners, and then the contagious diffusion that followed helps explain the rapid growth of the crocs brand, which had revenues of over $800 million in 2007.
+
+-A third form of expansion diffusion is stimulus diffusion.
+		-Not all ideas can be readily and directly adopted by a receiving population; some are simply too vague, too unattainable, too different, or too impractical for immediate adoption.
+	-Yet, these ideals can still have an impact.
+-They may indirectly promote local experimentation and eventual changes in ways of doing things.
+-For example, the diffusion of mass-produced food items in the late twentieth century—pushed by multinational retailers—led to the introduction of the hamburger to India.
+	-This was a major cultural obstacle to the adoption of the hamburger ( Fig, 1.23 ).
+		-Instead, retailers began selling burgers made of vegetable products—an adaptation that was stimulated by the diffusion of the hamburger but that took on a new form in the cultural context of India.
+
+-Expansion diffusion spreads across space without people physically moving to become “knowers” of the trait or innovation.
+		-Relocation diffusion, in contrast, involves the actual movement of individuals who have already adopted the idea or innovation, and who carry it to a new, perhaps distant, locale, where they proceed to disseminate it ( Fig, 1.22 ).
+
+-Relocation diffusion occurs most frequently through migration.
+		-Developing an ethnic neighborhood in a new country helps immigrants maintain their culture in the midst of an unfamiliar one.
+		-If the homeland of the immigrants loses enough of its population, the cultural customs may fade in the hearth while gaining strength in the ethnic neighborhoods abroad.
+
+-Geographic concepts include most of the boldfaced words in this chapter, such as relative location, mental map, perceptual region, diffusion, and cultural landscape.
+		-In doing geographic research, a geographer thinks of a geographic question, one that has a spatial or landscape component, chooses the scale(s) of analysis, and then applies one or more geographic concepts to conduct research and answer the question.
+-Geographers use fi eldwork, remote sensing, GIS, GPS, and qualitative and quantitative techniques to explore linkages among people and places and to explain differences across people, places, scales, and times.
+
+-Research in human geography today stems from a variety of theories and philosophies.
+	-Today’s geography is not environmental determinism.
+
+-The ancient Greeks, fi nding that some of the peoples subjugated by their expanding empire were relatively docile while others were rebellious, attributed such differences to variations in climate.
+		-but incapable of ruling others,” and he characterized Asian people (by which he meant modern-day Turkey) as “intelligent and inventive .
+		-[but] always in a state of subjection and slavery.” Aristotle attributed these traits to the respective climates of the regions—the cold north versus the more tropical Mediterranean.
+	-Aristotle’s views on this topic were long-lasting.
+	-As recently as the fi rst half of the twentieth century, similar notions still had strong support.
+	-In 1940, in the Principles of Human Geography, Ellsworth Huntington and C.W.
+		-Cushing wrote: The well-known contrast between the energetic people of the most progressive parts of the temperate zone and the inert inhabitants of the tropics and even of intermediate regions, such as Persia, is largely due to climate .
+		-the people of the cyclonic regions rank so far above those of the other parts of the world that they are the natural leaders.
+
+-The doctrine expressed by these statements is referred to as environmental determinism.
+		-It holds that human behavior, individually and collectively, is strongly affected by—even controlled or determined by—the physical environment.
+	-It suggests that climate is the critical factor in how humans behave.
+	-Yet what constitutes an “ideal” climate lies in the eyes of the beholder.
+	-For Aristotle, it was the climate of Greece.
+		-Through the eyes of more recent commentators from Western Europe and North America, the climates most suited to progress and productiveness in culture, politics, and technology are (you guessed it) those of Western Europe and the northeastern United States.
+
+-For a time, some geographers attempted to explain the location of major cultural hearths as solely a function of environment.
+-They recognized exceptions to the environmental determinists’ theories (for example, the Maya civilization in the Americas arose in a tropical climate that most assumed was incapable of complex cultures) and argued that humanity was capable of much more than merely adapting to the natural environment.
+-The many environmentally determinist theories that explain Europe as “superior” to the rest of the world because of the climate and location of the region ignore the fact that for thousands of years, the most technologically advanced civilizations were found outside of Europe in North Africa, Southwest Asia, Southeast Asia, and East Asia.
+
+-Chipping away at environmentally determinist theories helped move the geographic study of the relationships between human society and the environment in different directions, but for several decades some geographers still held to environmental determinist positions.
+-In Climate and the Energy of Nations (1947), Sidney Markham thought that by tracing the migration of the center of power in the Mediterranean (from Egypt to Greece to Rome), he could detect the changing climates of that part of Europe during several thousand years of glacial retreat.
+-Markham saw the northward movement of isotherms—lines connecting points of equal temperature values—as a key factor in the shifting centers of power in the Ancient World.
+-Basically, he argued that as new places “thawed” after the Ice Age, they became the center of power.
+
+-Geographers grew increasingly cautious about such speculative notions, however, and they began asking new questions about human–environment relationships.
+		-Everyone agrees that the natural environment affects human activity in some ways, but people are the decision makers and the modifi ers—not just the slaves of environmental forces.
+-People and their cultures shape environments, constantly altering the landscape and affecting environmental systems.
+
+-Reactions to environmental determinism produced counterarguments.
+		-An approach known as possibilism emerged—espoused by geographers who argued that the natural environment merely serves to limit the range of choices available to a culture.
+-The choices that a society makes depend on what its members need and on what technology is available to them.
+-Geographers increasingly accepted the doctrine of possibilism, and geographers increasingly discredited environmental determinism.
+		-For those who have thought less carefully about the human–environment dynamic, environmental determinism continues to hold an allure, leading to some highly questionable generalizations about the impact of the environment on humans and a multitude of popular books that use environment as the dominant force in explaining complex histories.
+
+-Even possibilism has its limitations because it encourages a line of inquiry that starts with the physical environment and asks what it allows.
+		-Human cultures frequently push the boundaries of what is “environmentally possible” through advances in technology— their own ideas and ingenuity.
+		-In the interconnected, technologically dependent world we live in today, it is possible to do many things that are at odds with the local environment.
+
+-Research today tends to focus on how and why humans have altered environment, and on the sustainability of their practices.
+-In the process, the perspectives of cultural ecology (an area of inquiry concerned with culture as a system of adaptation to and alteration of environment) have been supplemented by those of political  ecology—an area of inquiry fundamentally concerned with the environmental consequences of dominant politicaleconomic arrangements and understandings (see Chapter 13).
+-The fundamental point is that human societies are diverse and the human will is too powerful to be determined by environment.
+
+-Human geography encompasses many subdisciplines, including political geography, economic geography, population geography, and urban geography.
+		-Human geography also incorporates cultural geography, including cultural traits such as religion, language, and ethnicity.
+
+-Cultural geography is both part of human geography and also its own approach to all aspects of human geography.
+		-Cultural geography looks at the ways culture is implicated in the full spectrum of topics addressed in human geography.
+	-As such, cultural geography can be seen as a perspective on human geography as much as a component of it.
+
+-To appreciate more fully the vast topics researched by human geographers, we can examine the multitude of careers human geographers pursue.
+		-Human geographers have titles such as location analyst, urban planner, diplomat, remote sensing analyst, geographic information scientist, area specialist, travel consultant, political analyst, intelligence offi cer, cartographer, educator, soil scientist, transportation planner, park ranger, or environmental consultant.
+-All of these careers and more are open to geographers because each of these fi elds is grounded in place and is advanced through spatial analysis.
 
